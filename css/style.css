@@ -14,7 +14,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -56,4 +56,86 @@ button {
 
 button:hover {
   background-color: #303f9f;
+}
+
+
+-------------
+
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f9f9f9;
+  margin: 0;
+}
+
+.quiz-container {
+  width: 500px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 150px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #ccc;
+  margin-bottom: 10px;
+}
+
+.teamname {
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.timer {
+  position: absolute;
+  right: 200px;
+  top: 400px;
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.answers button {
+  background: #1e3a8a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.answers button:hover {
+  background: #3b82f6;
 }
